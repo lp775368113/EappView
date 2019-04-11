@@ -1,0 +1,39 @@
+/**index.wxss**/
+.page {
+  padding: 20px;
+  margin: 10;
+  list-style:none;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+.list-item {
+  padding: 5px;
+  width: 100%;
+  height: 20px;
+  text-align: left;
+  font-size: 40rpx;
+  margin-top: 10px;
+}
+
+
+.list-item text{
+  box-sizing: border-box;
+  width: 50%;
+  height: 30px; 
+  padding: 5px 0px 10px 5px;
+  background-color: #fff;
+  border-radius: 4px;  
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  float:left;
+}
+
+.list-item xiaoliang-block {
+  height:120rpx;
+  line-height:100rpx;
+  /* text-indent: 30rpx; */
+  border-bottom: 2rpx solid #cccccc; 
+  width: 100%;
+  color: #808080;
+  font-size: 12px;
+}

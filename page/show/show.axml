@@ -1,0 +1,35 @@
+<view class="page">
+  <button type="primary" formType="submit" class="query1" onTap="showDay" style="color:{{color1}};border: 1px solid {{color1}};" >今  日</button>
+  <button type="primary" formType="submit" class="query2" onTap="showMonth" style="color:{{color2}};border: 1px solid {{color2}};">本  月</button>
+  <view  class="list-item"> 
+    <text class="quyu">区域</text>
+     <text class="xiaoliang">销量</text>
+     <text class="shuliang">数量</text>
+  </view>
+    <view class="list-item qg" hidden="{{qg.name==null ? true : false}}">
+     <text class="quyu">{{qg.name}}</text>
+     <text class="xiaoliang">{{qg.xiaoliang}}</text>
+     <text class="shuliang">{{qg.shuliang}}</text>
+  </view>
+  <view  a:for="{{list}}"  class="list-item zq" a:for-item="zq"> 
+    <view hidden="{{zq.xiaoliang==null ? true : false}}">
+     <text class="quyu">{{zq.name}}</text>
+     <text class="xiaoliang">{{zq.xiaoliang}}</text>
+     <text class="shuliang">{{zq.shuliang}}</text>
+     <view  a:for="{{zq.dq}}"  class="list-item dq" a:for-item="dq"> 
+       <view hidden="{{dq.xiaoliang==null ? true : false}}">
+        <text class="quyu">{{dq.name}}</text>
+        <text class="xiaoliang">{{dq.xiaoliang}}</text>
+        <text class="shuliang">{{dq.shuliang}}</text>
+        <view  a:for="{{dq.pq}}"  class="list-item pq" a:for-item="pq">
+            <view hidden="{{pq.xiaoliang==null ? true : false}}">
+            <text class="quyu">{{pq.name}}</text>
+            <text class="xiaoliang">{{pq.xiaoliang}}</text>
+            <text class="shuliang">{{pq.shuliang}}</text>
+            </view>
+        </view>
+        </view>
+      </view>
+      </view>
+  </view>
+</view>

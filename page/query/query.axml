@@ -1,0 +1,6 @@
+<view class="page">
+  <view  a:for="{{list}}"  class="list-item"> 
+    <text class="quyu">{{item.name}}</text>
+     <text class="xiaoliang">{{item.value}}</text>
+  </view>
+</view>

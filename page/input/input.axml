@@ -1,0 +1,29 @@
+
+<form onSubmit="formSubmit" onReset="formReset">
+  <view class="help" onTap="help">
+  <image style=" width: 35px; height:35px;" class src="../images/help.png"  />
+  </view>
+  <view class="shuoming" hidden="{{isfirst ? false : true}}">
+   <text class="smtitle">使用说明</text>
+   <text>1、默认不选且不输入型号点击查询，查询记录为所有型号的销量信息；</text>
+   <text>2、支持输入多种型号查询，型号之间用英文逗号分隔。</text>
+ </view>
+<view class="page">
+  <view class="input">
+  <view class='xh'>
+    <checkbox-group>
+      <label class="checkbox" a:for="{{xhs}}">
+        <checkbox value="{{item.value}}"   />
+        <text class="checkbox-text">{{item.name}}</text>
+      </label>
+    </checkbox-group>
+  </view>
+  <view>
+    <input  type="text" name='xh' placeholder="输入型号" class="inputbt"/>
+    
+    <button type="primary" formType="submit" class="query">查  询</button>
+    <!--<button type="primary" formType="submit" class="query1">查询</button>-->
+  </view>
+  </view>
+</view>
+</form>

@@ -1,0 +1,15 @@
+
+<form onSubmit="formSubmit" onReset="formReset">
+  <view class="tr1">请选择您要申请查看的区域：</view>
+<view class="tr2">
+<checkbox-group>
+ 
+  <label class="checkbox" a:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />
+    <text class="checkbox-text">{{item.name}}</text>
+  </label>
+</checkbox-group>
+</view>
+    <textarea placeholder="备注" name="textarea" class="tr2"/>
+   <button type="primary" formType="submit">发起审批</button>
+</form>

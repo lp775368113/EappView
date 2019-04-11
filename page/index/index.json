@@ -1,0 +1,21 @@
+{
+   "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "page/index/index",
+        "name": "销量查询",
+        "icon":"page/images/1.png",
+        "activeIcon": "page/images/01.png"
+      },
+      {
+        "pagePath": "page/permission/permission",
+        "name": "权限申请",
+        "icon":"page/images/2.png",
+        "activeIcon": "page/images/02.png"
+      }
+    ]
+  } 
+}

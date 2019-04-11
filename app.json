@@ -1,0 +1,39 @@
+{
+  "pages": [
+    
+    "page/input/input",
+    "page/permission/permission",
+    "page/show/show",
+    "page/index/index",
+    "page/query/query"
+    
+    
+  ],
+  "window": {
+    "enableWK": "YES",
+    "enableDSL": true,
+    "defaultTitle": "销量查询",
+    "backgroundColor": "#F5F5F9",
+    "pullRefresh": false,
+    "allowsBounceVertical": true
+  },
+  "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "page/input/input",
+        "name": "销量查询",
+        "icon":"page/images/1.png",
+        "activeIcon": "page/images/01.png"
+      },
+      {
+        "pagePath": "page/permission/permission",
+        "name": "权限申请",
+        "icon":"page/images/2.png",
+        "activeIcon": "page/images/02.png"
+      }
+    ]
+  }
+}
